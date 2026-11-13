@@ -12,11 +12,11 @@ class TestCalculator(unittest.TestCase):
     self.assertEqual(subtract(20,10),10)
   def test_mutiply(self):
     self.assertEqual(multiply(6,4),24)
-if_name_=="_main_":
- print("Student Calculator Application")
- print("Addition:",add(20,20))
-print("Subtraction:",subtract(20,10))
-print("Multiplication:",multiply(5,4))
-print("\n Executing Automated Test... \n")
-unittest.main(argv=['first-arg-is-ignored'],exit=False)
+if __name__=="__main__":
+  print("Student Calculator Application")
+  print("Addition:",add(20,20))
+  print("Subtraction:",subtract(20,10))
+  print("Multiplication:",multiply(5,4))
+  print("\n Executing Automated Test... \n")
+  unittest.main(argv=['first-arg-is-ignored'],exit=False)
 
